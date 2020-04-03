@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import inside from 'point-in-polygon'
+import keys from '../../keys.json'
 import Header from './header'
 import Map from './map'
 import Footer from './footer'
@@ -55,8 +56,10 @@ module.exports = () => {
       `&type=${selected}`,
       '&radius=100',
       '&opennow=true',
-      '&key=AIzaSyDv3AX7-dL0vX0Ci597bSUz6hw4N_Clyz4',
+      `&key=${keys.googleApi}`,
     ].join('')
+
+    console.log('url', url)
 
     // fetch(url).then(response => {
     //   console.log('response', response)
