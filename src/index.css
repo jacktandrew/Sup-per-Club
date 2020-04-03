@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 7vh;
+}
+
+.map {
+  height: 90vh;
+}
+
+footer {
+  height: 3vh;
+}
