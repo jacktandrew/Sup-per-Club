@@ -21,7 +21,7 @@ module.exports = ({ findMe, handleMap, handleMarker, ...state }) => {
       <PigeonMap center={center} onClick={handleMap} provider={provider} zoom={zoom}>
         <p className="status">{status}</p>
         {
-          points.map(([lat, lon, name], i) => (
+          points.map(([lon, lat, name], i) => (
             <PigeonMarker anchor={[lat, lon]} key={i} payload={name} onClick={handleMarker} />
           ))
         }

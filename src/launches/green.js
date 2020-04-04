@@ -1,3 +1,3 @@
 module.exports = [
-  [47.681497, -122.329637, 'East Green Lake Beach'],
+  [-122.329637, 47.681497, 'East Green Lake Beach'],
 ]

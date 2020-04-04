@@ -67,10 +67,16 @@ module.exports = () => {
   }
 
   const handleMap = ({ latLng, pixel }) => {
+    const [lat, lng] = latLng
+    let match
+
     for (let key in polygons) {
-      if (inside(latLng, polygons[key])) {
-        setPoints(launches[key])
-        break
+      if (inside([lng, lat], polygons[key])) {
+        match = launches[key]
+        if (match) {
+          setPoints(match)
+          break
+        }
       }
     }
   }
