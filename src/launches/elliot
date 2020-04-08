@@ -1,0 +1,4 @@
+module.exports = [
+  [-122.3621, 47.6198, 'Elliot Bay North'],
+  [-122.3621, 47.6198, 'Elliot Bay South'],
+]
